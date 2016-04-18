@@ -1,0 +1,105 @@
+.light-bulb{
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    .filo {
+        position: relative;
+        background-color: #000000;
+        width: 2px;
+        height: 30px;
+        left: 50%;
+        margin-left: -1px;
+        z-index: 1;
+        top: 17px;
+
+    }
+    .filo:after {
+        content: " ";
+        left: -4px;
+        top: 100%;
+        position: absolute;
+        border-bottom: 15px solid #000000;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        height: 0;
+        width: 2px;
+    }
+    #lampadina {
+        position:relative;
+    }
+    input[id="switch"]:checked ~
+    .filo {
+        -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+           -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+            -ms-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+             -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+                box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
+    }
+    input[id="switch"]:checked ~
+    .filo:after {
+        -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+           -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+            -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+             -o-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+                box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
+    }
+
+    input {
+        position: absolute;
+        width: 90px;
+        height: 70px;
+        top: 150px;
+        margin-left:-45px;
+        opacity: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    label.light-buble{
+        width: 17px;
+        height: 17px;
+        top: 0px;
+        position: absolute;
+        left: 0;
+        margin-left: -9px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        border-radius: 100%;
+
+        background: rgba(255,255,255,0.03);
+        -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+           -moz-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+            -ms-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+             -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+                box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
+    }
+
+    label.light-buble bulb{
+            content: " ";
+        width: 5px;
+        height: 5px;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        margin-left: 5px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        border-radius: 100%;
+        border: 1px solid rgba(255,255,255,0.03);
+    }
+    label.light-buble bulb lit{
+        position: absolute;
+        width: 1.8px;
+        height: 2.8px;
+        background: #333;
+        display: block;
+        left: 2.1px;
+        bottom: 0px;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "light-map",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ytyszxf <ljz135790@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "dependencies": {
+    "angular-resource": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-leaflet-directive": "^0.10.0",
+    "jquery": "^2.2.1",
+    "underscore": "^1.8.3"
+  }
+}
