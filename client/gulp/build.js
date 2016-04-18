@@ -95,7 +95,7 @@ gulp.task('clean', function (done) {
 gulp.task('sass', function () {
   return gulp.src(paths.src + '/app/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(paths.src + '/app/css'));
+    .pipe(gulp.dest(paths.src + '/css'));
 });
 
 gulp.task('dist', ['html', 'images', 'misc', 'fonts']);
