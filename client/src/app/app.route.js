@@ -3,7 +3,7 @@
 angular.module('myApp')
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('app',{
+      .state('app', {
         url: '', 
         templateUrl: 'app/app.html',
         controller: 'AppController',

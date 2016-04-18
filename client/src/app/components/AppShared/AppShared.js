@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('myApp.AppShared', ['ngAnimate', 'ngCookies', 'ngSanitize', 
-    'ui.bootstrap', 'LocalStorageModule', 'awesome-context-menu', 'smart-table', 'gridster'])
+angular.module('myApp.AppShared', ['ngAnimate', 'ngSanitize', 
+    'ui.bootstrap', 'LocalStorageModule'])
 .constant('AppConfig', {
     StoragePrefix: 'myApp',
     USER_SESSION: 'USER_SESSION'

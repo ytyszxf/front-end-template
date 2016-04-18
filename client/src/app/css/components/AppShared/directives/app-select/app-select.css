@@ -1,0 +1,5 @@
+.app-select {
+  display: inline-block; }
+  .app-select ul {
+    max-height: 300px;
+    overflow-y: auto; }

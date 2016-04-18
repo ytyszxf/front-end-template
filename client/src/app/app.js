@@ -1,6 +1,7 @@
 'use strict'
 
-var MyApp = angular.module('myApp', ['leaflet-directive', 'ui.router', 'ngResource'
+var MyApp = angular.module('myApp', ['ui.router', 
+  'myApp.Secure', 'myApp.AppShared'
 ]);
 MyApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $logProvider) {
 
@@ -29,15 +30,7 @@ MyApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $logPro
         }
       };
     });
-
-    $stateProvider
-      .state('app',{
-        url: '/app',
-        templateUrl: 'app/app.html',
-        controller: 'AppController'
-      });
-
-      $urlRouterProvider.otherwise('app');
+    
 }).run(
   ['$rootScope', '$state', '$stateParams', 'AppUtils',
       function($rootScope, $state, $stateParams, AppUtils) {
