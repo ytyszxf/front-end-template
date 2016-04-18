@@ -9,7 +9,7 @@ var jwt = require("jsonwebtoken");
 var app = express();
 
 app.get('/', function(req, res, next) {
-  res.render('index.html', { title: 'Express' });
+  res.redirect('index.html');
 });
 
 // uncomment after placing your favicon in /public

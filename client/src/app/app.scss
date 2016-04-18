@@ -1,28 +1,4 @@
 
-.map-container{
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-}
-
-.marker-container{
-  width: 0%;
-  height: 0%;
-  z-index: 2;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  .light{
-    width: 20px;
-    height: 20px;
-    background: red;
-    position: absolute;
-  }
-}
-
 /* === Spinner === */
 #spinner{
     top: 0px;

@@ -1,0 +1,21 @@
+.sp-thing-picker{
+    .search-field{
+        width: 120px;
+        display: inline-block;
+        top: 1px;
+        position: relative;
+    }
+
+    .load-more{
+        width: 100%;
+        text-align: center;
+        height: 34px;
+        line-height: 34px;
+        border: #ddd 1px dashed;
+        cursor: pointer;
+
+        &:hover{
+            border: #ccc 1px dashed;
+        }
+    }
+}

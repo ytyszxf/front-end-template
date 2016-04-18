@@ -1,6 +1,6 @@
 'use strict'
 
-var MyApp = angular.module('LightMap', ['leaflet-directive', 'ui.router', 'ngResource'
+var MyApp = angular.module('myApp', ['leaflet-directive', 'ui.router', 'ngResource'
 ]);
 MyApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $logProvider) {
 

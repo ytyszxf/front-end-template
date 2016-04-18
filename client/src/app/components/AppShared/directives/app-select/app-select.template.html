@@ -1,0 +1,8 @@
+<div class="app-select" ng-class="myClass" uib-dropdown>
+  <button id="search-filter" ng-disabled="disabled" type="button" class="btn btn-default" uib-dropdown-toggle>
+    {{selectedOption[setting.text]}}<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="search-filter">
+    <li ng-repeat="option in options" role="menuitem" ng-click="selectOption(option)"><a>{{option[setting.text]}}</a></li>
+  </ul>
+</div>

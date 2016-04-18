@@ -4,7 +4,7 @@ var gulp = require('gulp');
 
 var paths = gulp.paths;
 
-gulp.task('watch', ['inject:watch', 'sass:watch', 'sdk:watch']);
+gulp.task('watch', ['inject:watch', 'sass:watch']);
 
 gulp.task('inject:watch', function(){
     gulp.watch([
@@ -15,10 +15,6 @@ gulp.task('inject:watch', function(){
             paths.src + 'bower_components/**/*',
             'bower.json'
         ], ['inject']);
-});
-
-gulp.task('sdk:watch', function(){
-    gulp.watch([paths.sdk + '/dist/*.js'], ['sdk']);
 });
 
 gulp.task('sass:watch', function () {

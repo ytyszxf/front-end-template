@@ -1,5 +1,5 @@
 {
-  "name": "light-map",
+  "name": "myApp",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -11,8 +11,9 @@
   "dependencies": {
     "angular-resource": "^1.5.0",
     "angular-ui-router": "^0.2.18",
-    "angular-leaflet-directive": "^0.10.0",
     "jquery": "^2.2.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "angular-bootstrap": "^1.3.2",
+    "bootstrap": "^3.3.6"
   }
 }

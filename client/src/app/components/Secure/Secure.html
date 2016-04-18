@@ -1,0 +1,68 @@
+<div class="app-secure">
+  <div class="app-logo-bg">
+    <span class="fa fa-paper-plane-o app-icon"></span> <span>Starter Pack Portal</span>
+  </div>
+  <div class="login-form-box">
+    <form name="loginForm" class="form-signin" role="form" novalidate ng-submit="login(credentials)">
+      <div class="form-item-header">User Login</div>
+      <fieldset>
+        <div class="input-group margin-bottom-sm" ng-class="nameInputFoucsClass">
+          <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+          <input type="text" class="form-control" placeholder="Username" name="username" placeholder="Username or e-mail" ng-model="credentials.username" required autofocus>
+        </div>
+        <div class="input-group margin-bottom-sm" ng-class="pwdInputFoucsClass">
+          <span class="input-group-addon"><i
+            class="fa fa-unlock fa-fw"></i></span> 
+          <input type="password" class="form-control" name="password" placeholder="Password" ng-model="credentials.password" required />
+        </div>
+        <div class="margin-bottom-sm">
+          <input type="checkbox" id="rememberMe" name="rememberMe"/> <label for="rememberMe">Remember Me
+            <switchery type="checkbox" ng-model="credentials.rememberMe" yes-text="yes" no-text="no"></switchery>
+          </label>
+        </div>
+        <div class="item-submit">
+          <button type="submit" class="btn btn-danger item-submit-button">
+            <span>Login</span>
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="tip-wrap">
+    <a id="register" class="ui-commandlink ui-widget" ng-click="register()"> <span>Registration</span>
+    </a>
+  </div>
+  <div class="powered-by">
+    Powered by <span><img class="login-logo"
+      src="images/kiicloud-logo.png" width="60px"></span>Kii China Team
+    <div class="version-msg">Version 1.0b</div>
+  </div>
+  <div class="hidden">
+    <div class="modal-content" id="registerModal">
+      <div class="modal-header ng-scope">
+        <h3 class="modal-title">User Registration</h3>
+      </div>
+      <div class="modal-body clearfix app-secure-userlogin">
+        <div class="input-group margin-bottom-sm" ng-class="nameInputFoucsClass">
+          <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+          <input type="text" class="form-control" placeholder="Username" name="username" placeholder="Username or e-mail" ng-model="credentials.userID" required autofocus>
+        </div>
+        <div class="input-group margin-bottom-sm" ng-class="pwdInputFoucsClass">
+          <span class="input-group-addon"><i
+            class="fa fa-unlock fa-fw"></i></span> 
+          <input type="password" class="form-control" name="password" placeholder="Password" ng-model="credentials.password" required />
+        </div>
+        <div class="item-submit">
+          <button type="submit" class="btn btn-danger item-submit-button" ng-click="register(credentials)">
+            <span>Register</span>
+          </button>
+        </div>
+        <div class="item-submit">
+          <button type="submit" class="btn btn-danger item-submit-button" ng-click="cancel()">
+            <span>Cancel</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="input-group">
+    <input type="{{type || 'text'}}" ng-model="ngModel" class="form-control" />
+    <span class="input-group-addon">{{!ngModel? max: (max - ngModel.length)}}</span>
+</div>

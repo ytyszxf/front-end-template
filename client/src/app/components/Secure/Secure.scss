@@ -1,0 +1,237 @@
+@import 'src/app/components/AppShared/scss/global.scss';
+.app-secure{
+    .margin-bottom-sm {
+        margin-bottom: 20px;
+    }
+     
+    .app-logo-bg{
+        text-align: center;
+        margin: 4% 0 3%;
+
+        span{
+            padding-top:10px;
+            font-size:22px;
+            font-weight : bold;
+            display: block;
+        }
+
+        img{
+            width : 89px;
+            height: 77px;
+        }
+
+        .app-icon{
+            font-size: 50px;
+            color: #019875;
+        }
+    }
+
+    .login-form-box {
+        min-height: 300px;
+        width: 392px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-box-shadow: 0 0 8px  #bebebe;
+        -webkit-box-shadow: 0 0 8px  #bebebe;
+        box-shadow: 0 0 8px  #bebebe;
+        background-color: #FFF;
+    }
+
+    .form-item-header {
+        color: #000;
+        text-align: center;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    fieldset{
+        margin: 0px auto;
+        border : none;
+    }
+
+    .form-item-msg {
+        width:356px;
+        margin: 0px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .input-group{
+        border: 1px solid #bebebe;
+        border-radius: 4px;   
+    }
+
+    .input-group .form-control {
+        font-size: 16px;
+        padding-left: 5px;
+        /* border: 1px solid #bebebe;
+        border-radius: 8px !important;
+        box-shadow: none; */
+        height: 42px;
+        border: none !important;
+        color: #000;
+    }
+
+    .input-group-addon {
+        background: #fff !important;
+        color: #f0f0f0;
+        font-size: 20px;
+        padding: 6px;
+        border: none !important;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    @include placeholder{
+        color: #BEBEBE !important;
+    }
+
+    input[type="checkbox"]+label {
+        font-size: 14px;
+        width: 330px;
+        display: block;
+
+        span {
+            display: inline-block;
+            width: 55px;
+            height: 25px;
+            margin: -1px 4px 0 0;
+            vertical-align: middle;
+            background: url('../../images/remMeInactive.png') no-repeat 0 0; 
+            cursor: pointer;
+        }
+    }
+
+
+    .item-submit {
+        margin-bottom: 10px;
+        text-align: center;
+
+        &:last-child{
+            margin-bottom: 20px;
+        }
+    }
+
+    .item-submit-button {
+        width: 100%;
+    }
+
+    .field-required {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 170;
+        color: red;
+        font-weight: normal;
+    }
+
+    .field-error {
+        display: block;
+        color: red;
+        text-align: center;
+    }
+
+    .tip-wrap {
+        color: #eb8c00;
+        cursor: pointer;
+        font-size: 14px;
+        margin: 5px 0 0;
+        text-align: center;
+        a{
+            color: #e33e25;
+        }
+    }
+
+
+    #login-loadingBox {
+        float: left;
+        margin-left: 20px;
+        display: none;
+    }
+
+
+    .login-learn-more {
+        color: #00aeff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .login-form-mask {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: #A6A29F;
+        z-index: 999999;
+
+        .login-form-box {
+            position: fixed;
+            margin: 120px auto 0;
+            left: 30%;
+            z-index: 9999999;
+        }
+    }
+
+    #login-confirm-dialog {
+        top: 60px;
+        .modal-footer {
+            margin-top: 0;
+            padding: 0 20px 19px 20px;
+        }
+    }
+
+    .version-msg{
+        font-weight: bold;
+    }
+
+    .session-expired-info {
+        text-align: center;
+        margin-top: 70px;
+        a {
+            cursor: pointer;
+        }
+    }
+
+    .session-expired-info-1  {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .session-expired-info-2  {
+        margin-bottom: 10px;
+    }
+
+    .powered-by {
+        text-align: center;
+        width: 100%;
+        bottom: 50px;
+        padding: 4px;
+    }
+
+    @media ( min-height : 650px) {
+        .powered-by {
+            position: fixed;
+        }
+    }
+    .login-logo{
+        vertical-align: baseline;
+    }
+
+    .inputFocus{
+         border-color: rgba(82,168,236,.8) !important;
+         outline: 0;
+         -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+         box-shadow: 0 0 8px rgba(82,168,236,.6);
+    }
+
+    .form-signin{
+        padding: 0px 34px;
+    }
+}
