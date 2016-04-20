@@ -14,11 +14,11 @@ MyApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $logPro
     $httpProvider.interceptors.push(function($q) {
       return {
         request: function(request) {
-            //MyApp.utils.doLoading();
+            MyApp.utils.doLoading();
             return request;
         },
         response: function(response){
-            //MyApp.utils.whenLoaded();
+            MyApp.utils.whenLoaded();
             return response;
         },
         responseError: function(response){
