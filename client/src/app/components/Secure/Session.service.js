@@ -1,4 +1,4 @@
-angular.module('myApp.Secure')
+angular.module('KiiFrontTemplate.Secure')
   .factory('SessionService', ['localStorageService', '$rootScope', 'AppConfig', function(localStorageService, $rootScope, AppConfig){
     var SessionService = {};
 

@@ -5,6 +5,8 @@ module.exports = function(config) {
   var mainBowerFiles = require('main-bower-files')({
     filter: /\.(js)$/i
   });
+  mainBowerFiles.push('bower_components/angular-mocks/angular-mocks.js');
+
   var sourceFiles = [
     'src/app/app.js',
     'src/app/components/AppShared/AppShared.js',

@@ -1,7 +1,7 @@
 'use strict'
 
-var MyApp = angular.module('myApp', ['ui.router', 
-  'myApp.Secure', 'myApp.AppShared'
+var MyApp = angular.module('KiiFrontTemplate', ['ui.router', 
+  'KiiFrontTemplate.Secure', 'KiiFrontTemplate.AppShared'
 ]);
 MyApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $logProvider) {
 

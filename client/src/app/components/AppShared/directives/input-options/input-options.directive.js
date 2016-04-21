@@ -1,4 +1,4 @@
-angular.module('myApp.AppShared')
+angular.module('KiiFrontTemplate.AppShared')
   .directive('inputOptions', ['$compile', '$timeout', function($compile, $timeout){
     return{
         restrict: 'A',

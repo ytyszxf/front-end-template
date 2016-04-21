@@ -1,4 +1,4 @@
-angular.module('myApp.AppShared')
+angular.module('KiiFrontTemplate.AppShared')
   .directive('textLimit',['$timeout',function($timeout){
     return {
         restrict: 'E',

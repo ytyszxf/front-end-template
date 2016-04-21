@@ -1,9 +1,10 @@
 'use strict';
 
-angular.module('myApp.AppShared', ['ngAnimate', 'ngSanitize', 
-    'ui.bootstrap', 'LocalStorageModule'])
+angular.module('KiiFrontTemplate.AppShared', ['ngAnimate', 'ngSanitize', 
+    'ui.bootstrap', 'LocalStorageModule', 'ui.router', 
+  'KiiFrontTemplate.Secure'])
 .constant('AppConfig', {
-    StoragePrefix: 'myApp',
+    StoragePrefix: 'KiiFrontTemplate',
     USER_SESSION: 'USER_SESSION'
 })
 .config(function(localStorageServiceProvider, AppConfig) {

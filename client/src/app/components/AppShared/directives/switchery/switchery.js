@@ -1,4 +1,4 @@
-angular.module('myApp.AppShared').directive('switchery', ['$timeout', function($timeout) {
+angular.module('KiiFrontTemplate.AppShared').directive('switchery', ['$timeout', function($timeout) {
     return {
         restrict: 'E',
         scope: {

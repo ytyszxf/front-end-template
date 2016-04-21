@@ -11,6 +11,7 @@ gulp.paths = {
   appStructFile: 'construct.json',
   templatePath: 'app_templates/'
 };
+gulp.appName = 'KiiFrontTemplate';
 
 require('require-dir')('./gulp');
 

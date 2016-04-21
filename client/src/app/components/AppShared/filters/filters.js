@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.AppShared')
+angular.module('KiiFrontTemplate.AppShared')
   .filter('leftHalf', function() {
     return function(input) {
         var arr = []

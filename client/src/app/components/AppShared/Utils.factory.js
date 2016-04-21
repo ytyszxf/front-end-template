@@ -1,4 +1,4 @@
-angular.module('myApp.AppShared')
+angular.module('KiiFrontTemplate.AppShared')
     .factory('AppUtils', ['$rootScope', '$http', '$location', '$q', '$state', '$timeout', '$uibModal', 'AppConfig',
     function ($rootScope, $http, $location, $q, $state, $timeout, $uibModal, AppConfig) {
         window.app = {};

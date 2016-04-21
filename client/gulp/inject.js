@@ -11,7 +11,7 @@ var wiredep = require('wiredep').stream;
 gulp.task('inject', function () {
 
   var injectStyles = gulp.src([
-    paths.src + '/{app,components}/**/*.css'
+    paths.src + '/css/**/*.css'
   ], { read: false });
 
   var injectScripts = gulp.src([

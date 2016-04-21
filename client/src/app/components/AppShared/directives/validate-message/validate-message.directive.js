@@ -1,4 +1,4 @@
-angular.module('myApp.AppShared')
+angular.module('KiiFrontTemplate.AppShared')
     .directive('validateMessage', ['$timeout', function($timeout) {
         var timer;
         return {

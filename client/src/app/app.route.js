@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('KiiFrontTemplate')
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app', {

@@ -1,2 +1,2 @@
 'use strict';
-angular.module('myApp.Secure', ['myApp.AppShared']);
+angular.module('KiiFrontTemplate.Secure', ['KiiFrontTemplate.AppShared']);
